@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DefaultController!{% endblock %}
+
+{% block body %}
+
+<div>
+    <img src="{{ asset('img/kamer.jpg') }}" class="admin-preview"/ width="100%" height="300px">
+</div>
+<div class="example-wrapper">
+    <h1>Reserveer hier uw kamer</h1>
+    {{ form_start(our_form) }}
+    {{ form_widget(our_form) }}
+    <input type="submit" class="btn btn-lg btn-primary btn-block text-uppercase" value="Send" />
+    {{ form_end(our_form) }}
+
+</div>
+{% endblock %}
